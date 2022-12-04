@@ -1,18 +1,56 @@
 body{
     /*background-image: linear-gradient(to right, #5a5a5a 30%, #8a14d4); gradient bg*/
-    background-color: #647bcf;
+    background-color: #3d3d3d;/*grey#3d3d3d - blue#647bcf*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 /*logo div class*/
-.logo {
+.logo{
     width: 18vmin;
     height: 18vmin;
     position: absolute;
     top: -2vmin;
-    left: 5vmin;
+    left: 4vmax;
  }
  /*any img element in a div with logo class will be the size of the div*/
- .logo img {
+ .logo img{
     height: 100%;
     width: 100%;
  }
+
+/*this element is used to hold the pricing cards*/
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmax;
+    position: relative;
+    flex-direction: row;
+    max-width: 100%;
+    width: calc(100%-2vw);
+}
+/*this class is used for the pricing cards*/
+.card{
+    background-color: rgba(255,255,255,0.1);
+    border: 0.2vmin solid rgba(255,255,255,0.2);
+    border-radius: 1vmin;
+    cursor: pointer;
+    height: 30vmin;
+    width: 30vmin;
+}
+.card:hover::before{
+    opacity: 1;
+}
+.card::before{
+    background: radial-gradient(800px circle at calc(70% + var(--mouse-x)) var(--mouse-y), rgba(255,255,255,0.06),transparent 40%);
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms; 
+    width: 100%;
+    z-index: 2;
+}
