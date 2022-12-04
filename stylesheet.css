@@ -1,0 +1,18 @@
+body{
+    /*background-image: linear-gradient(to right, #5a5a5a 30%, #8a14d4); gradient bg*/
+    background-color: #647bcf;
+}
+
+/*logo div class*/
+.logo {
+    width: 18vmin;
+    height: 18vmin;
+    position: absolute;
+    top: -2vmin;
+    left: 5vmin;
+ }
+ /*any img element in a div with logo class will be the size of the div*/
+ .logo img {
+    height: 100%;
+    width: 100%;
+ }
