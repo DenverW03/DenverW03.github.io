@@ -1,14 +1,24 @@
 :root{
     --card-color: rgb(23,23,23);
-    --card-color-blue: rgba(100, 123, 207, 0.714);
+    --card-color-blue: rgb(100, 123, 207);
 }
 
 body{
     /*background-image: linear-gradient(to right, #5a5a5a 30%, #8a14d4); gradient bg*/
-    background-color: #3d3d3d;/*grey#3d3d3d - blue#647bcf*/
+    background-color: rgb(224, 224, 224);/*grey#3d3d3d - blue#647bcf*/
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.graphics-panel{
+    z-index: 0;
+    background-color: var(--card-color-blue); /*placeholder for image*/
+    background-image: url("bgPattern.png");
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 /*logo div class*/
 .logo{
@@ -27,13 +37,13 @@ body{
 /*this class will be used for holding the content*/
 .content-panel{
     position: absolute;
-    top: 20vh;
-    background-color: var(--card-color-blue);
-    border-radius: 1vmin;
-    max-width: 90vw;
-    max-height: 80vh;
-    width: 90vw;
-    height: 70vh;
+    top: 20%;
+    background-color: rgb(153, 17, 198);
+    border-radius: 15px;
+    max-width: 90%;
+    max-height: 70%;
+    width: 90%;
+    height: 70%;
     align-items: center;
 }
 
@@ -41,21 +51,13 @@ body{
 #cards{
     display: flex;
     flex-wrap: wrap;
-    gap: 2vmax;
+    gap: 4%;
     position: relative;
-    top: 15vh;
-    left: 10vw;
+    top: 20%;
+    left: 8.5%;
     flex-direction: row;
     max-width: 100%;
-    width: calc(100%-2vw);
-}
-/*this class is used for the pricing cards*/
-#cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    max-width: 100%;
-    width: calc(120vmin + 16px);
+    width: 90%;
 }
   
 #cards:hover > .card::after {
@@ -64,13 +66,13 @@ opacity: 1;
 
 .card {
 background-color: rgba(255, 255, 255, 0.1);
-border-radius: 2vmin;
+border-radius: 20px;
 cursor: pointer;
 display: flex;
-height: 40vmin;
+height: 22em;
 flex-direction: column;
 position: relative;
-width: 40vmin;  
+width: 28%;  
 }
 
 .card:hover::before {
@@ -98,13 +100,13 @@ background: radial-gradient(
 
 .card::after {  
 background: radial-gradient(
-    60vmin circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4),transparent 40%
-);
+    60vmin circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4),transparent 40%);
 z-index: 1;
 }
 
 .card > .card-content {
-background-color: var(--card-color);
+/*background-color: var(--card-color);*/
+background-image: linear-gradient(to right bottom, var(--card-color) 30%, var(--card-color-blue));
 border-radius: inherit;
 display: flex;
 flex-direction: column;
