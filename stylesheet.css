@@ -14,7 +14,7 @@ body{
     z-index: 0;
     background-color: var(--card-color-blue); /*placeholder for image*/
     background-image: url(bgPattern.png);
-    background-size: 100vw;
+    background-size: 100vmax;
     width: 100%;
     height: 70%;
     position: absolute;
