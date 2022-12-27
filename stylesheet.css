@@ -56,9 +56,15 @@ body{
     position: relative;
     top: 7em;
     left: calc(0% + 10vh);
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
     width: 100%;
+}
+
+@media (min-width: 1280px) {
+    #cards{
+        flex-direction: row;
+    }
 }
   
 #cards:hover > .card::after {
@@ -71,7 +77,6 @@ border-radius: 20px;
 cursor: pointer;
 display: flex;
 height: 23vmax;
-flex-direction: column;
 position: relative;
 width: 24vmax;
 }
