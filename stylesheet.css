@@ -1,11 +1,12 @@
 :root{
     --card-color: rgb(23,23,23);
     --card-color-blue: rgb(100, 123, 207);
+    --bg-color: rgb(213, 213, 213);
 }
 
 body{
     /*background-image: linear-gradient(to right, #5a5a5a 30%, #8a14d4); gradient bg*/
-    background-color: white;/*grey#3d3d3d - blue#647bcf*/
+    background-color: var(--bg-color);/*grey#3d3d3d - blue#647bcf*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,20 +28,24 @@ body{
     height: 18vmin;
     position: absolute;
     top: -2vmin;
-    left: 4vmax;
+    left: 2vmax;
  }
  /*any img element in a div with logo class will be the size of the div*/
  .logo img{
     height: 100%;
     width: 100%;
  }
+ .logo:hover{
+    background: var(--card-color-blue);
+    border-radius: 100%;
+ }
 
 /*this class will be used for holding the content*/
 .content-panel{
     position: absolute;
     top: 10em;
-    /*background-color: rgb(114, 114, 114);*/
-    /*border-radius: 15px;*/
+    background-color: rgb(114, 114, 114);
+    border-radius: 15px;
     max-width: 90%;
     max-height: 70%;
     width: 90%;
@@ -57,13 +62,18 @@ body{
     top: 7em;
     left: calc(0% + 10vh);
     flex-direction: column;
-    max-width: 100%;
-    width: 100%;
+    max-width: 75%;
+    width: 75%;
 }
 
 @media (min-width: 1280px) {
     #cards{
         flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
     }
 }
   
