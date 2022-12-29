@@ -7,8 +7,6 @@
 body{
     /*background-image: linear-gradient(to right, #5a5a5a 30%, #8a14d4); gradient bg*/
     background-color: var(--bg-color);/*grey#3d3d3d - blue#647bcf*/
-    display: flex;
-    justify-content: center;
 }
 .graphics-panel{
     z-index: 0;
@@ -35,6 +33,11 @@ body{
     width: 100%;
 }
 .logo:hover{
+    background: rgba(100, 123, 207, 0.246);
+    border-radius: 100%;
+    box-shadow: 5px;
+}
+.logo:active{
     background: var(--card-color-blue);
     border-radius: 100%;
     box-shadow: 5px;
@@ -49,6 +52,9 @@ body{
     width: 90%;
     /*height: 70%;*/
     height: 100em;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
 }
 @media (min-width: 1280px) {
     .content-panel{
@@ -203,4 +209,10 @@ color: rgb(240, 240, 240);
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.85em;
     margin-top: 8px;
+}
+
+#main{
+    position: relative;
+    top: 0;
+    left: 0;
 }

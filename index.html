@@ -2,27 +2,38 @@
 <head>
     <title>Incline</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="logo16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="logo32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="logo48.png" sizes="48x48">
 </head>
-<body>
+<body onload="init()">
     <div class="graphics-panel"></div>
-    <div id="logo" class="logo"><img src="lowreslogo.png" alt="incline dev logo"></div>
-    <div class="content-panel">
+    <div id="logo" class="logo"><img src="lowreslogo.png" alt="incline dev logo" onclick="switchVisible()"></div>
+    <div id="pricing" class="content-panel">
         <div id="cards">
             <div class="card">
                 <div class="card-content">
-                    <h1>Static</h1>
+                    <h1 class="card-info-title">Static</h1>
+                    <h4 class="card-info">A basic statically hosted site</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content">
-                    <h1>Dynamic</h1>
+                    <h1 class="card-info-title">Dynamic</h1>
+                    <h4 class="card-info">A site that can serve dynamic content</p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-content">
-                    <h1>Host Yourself</h1>
+                    <h1 class="card-info-title">Self Hosted</h1>
+                    <h4 class="card-info">Once the website is made, you are provided with the static files for self hosting on your own server</h4>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="main" class="content-panel">
+        <div id="main">
+            <p>random text</p>
         </div>
     </div>
     <script type="text/javascript" src="javascript.js"></script>

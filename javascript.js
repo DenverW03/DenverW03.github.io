@@ -8,3 +8,20 @@ document.getElementById("cards").onmousemove = e => {
       card.style.setProperty("--mouse-y", `${y}px`);
     };
 }
+var e1 = document.getElementById("main");
+var e2 = document.getElementById("pricing");
+//init
+function init(){
+  e1.style.visibility = "visible"
+  //e1.style.zIndex = 20;
+  e2.style.visibility = "hidden"
+  //e2.style.zIndex = 19;
+}
+
+//used to increment visibility of info sections
+function switchVisible(){
+  if(e2.style.visibility == "hidden"){
+    e1.style.visibility = "hidden";
+    e2.style.visibility = "visible";
+  }
+}
