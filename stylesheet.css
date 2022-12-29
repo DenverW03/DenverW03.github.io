@@ -76,6 +76,10 @@ body{
         height: 1em;
     }
 }
+/*may appear confusing but this is just to keep the current panel visible on nav circles*/
+.circle-indicator-active{
+    background-color: rgb(184, 184, 184);
+}
 
 /*this class will be used for holding the content*/
 .content-panel{
