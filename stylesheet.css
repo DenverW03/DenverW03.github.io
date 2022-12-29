@@ -45,15 +45,14 @@ body{
 
 /*this class will be used for holding the content*/
 .content-panel{
-    position: relative;
+    position: absolute;
     top: 15em;
     background-color: rgb(114, 114, 114);
     border-radius: 15px;
     width: 90%;
     /*height: 70%;*/
     height: 100em;
-    margin-left: auto;
-    margin-right: auto;
+    left: 5%; /*50% - (width/2) surefire way to have it centered*/
     vertical-align: middle;
 }
 @media (min-width: 1280px) {
@@ -209,10 +208,4 @@ color: rgb(240, 240, 240);
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.85em;
     margin-top: 8px;
-}
-
-#main{
-    position: relative;
-    top: 0;
-    left: 0;
 }
