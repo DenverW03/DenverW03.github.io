@@ -88,7 +88,6 @@ body{
     background-color: var(--content-panel-color);
     border-radius: 15px;
     width: 90%;
-    /*height: 70%;*/
     height: 100em;
     left: 5%; /*50% - (width/2) surefire way to have it centered*/
     vertical-align: middle;
@@ -180,8 +179,8 @@ opacity: 1;
 }
 
 .card > .card-content {
-    background-color: var(--card-color);
-    /*background-image: linear-gradient(to right bottom, var(--card-color) 30%, var(--card-color-blue));*/
+    /*background-color: var(--card-color);*/
+    background-image: linear-gradient(to right bottom, rgb(157, 8, 249) 30%, var(--card-color-blue));
     border-radius: inherit;
     display: flex;
     flex-direction: column;
