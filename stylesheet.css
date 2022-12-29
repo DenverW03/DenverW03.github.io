@@ -2,6 +2,7 @@
     --card-color: rgb(23,23,23);
     --card-color-blue: rgb(100, 123, 207);
     --bg-color: rgb(213, 213, 213);
+    --content-panel-color: rgb(114, 114, 114);
 }
 
 body{
@@ -43,11 +44,44 @@ body{
     box-shadow: 5px;
 }
 
+.circle-panel{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    gap: 0.5em;
+    width: fit-content;
+    height: fit-content;
+    left: calc(50% - 4em - 0.5em - 0.25em);
+    top: 12em;
+}
+@media (min-width: 1280px){
+    .circle-panel{
+        top: 8.5em;
+        left: calc(50% - 2em - 0.5em - 0.25em);
+    }
+}
+
+.circle-indicator{
+    background-color: var(--content-panel-color);
+    border-radius: 100%;
+    width: 2em;
+    height: 2em;
+}
+.circle-indicator:active{
+    background-color: white;
+}
+@media (min-width: 1280px){
+    .circle-indicator{
+        width: 1em;
+        height: 1em;
+    }
+}
+
 /*this class will be used for holding the content*/
 .content-panel{
     position: absolute;
     top: 15em;
-    background-color: rgb(114, 114, 114);
+    background-color: var(--content-panel-color);
     border-radius: 15px;
     width: 90%;
     /*height: 70%;*/

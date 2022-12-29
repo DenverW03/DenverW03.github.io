@@ -17,9 +17,19 @@ function init(){
 }
 
 //used to increment visibility of info sections
-function switchVisible(){
-  if(e2.style.visibility == "hidden"){
-    e1.style.visibility = "hidden";
-    e2.style.visibility = "visible";
+function switchVisible(identifier){
+  switch(identifier){
+    case 1:
+      e1.style.visibility = "visible";
+      e2.style.visibility = "hidden";
+      break;
+    case 2:
+      e1.style.visibility = "hidden";
+      e2.style.visibility = "visible";
+      break;
+    case 3:
+      break;
+    case 4:
+      break;
   }
 }

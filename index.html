@@ -8,7 +8,13 @@
 </head>
 <body onload="init()">
     <div class="graphics-panel"></div>
-    <div id="logo" class="logo"><img src="lowreslogo.png" alt="incline dev logo" onclick="switchVisible()"></div>
+    <div id="logo" class="logo"><img src="lowreslogo.png" alt="incline dev logo"></div>
+    <div class="circle-panel">
+        <div id="circle1" class="circle-indicator" onclick="switchVisible(1)"></div>
+        <div id="circle2" class="circle-indicator" onclick="switchVisible(2)"></div>
+        <div id="circle3" class="circle-indicator" onclick="switchVisible(3)"></div>
+        <div id="circle4" class="circle-indicator" onclick="switchVisible(4)"></div>
+    </div>
     <div id="pricing" class="content-panel">
         <div id="cards">
             <div class="card">
