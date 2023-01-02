@@ -25,6 +25,7 @@ function init(){
   e2.style.visibility = "hidden";
   //e3.style.visibility = "hidden";
   e4.style.visibility = "hidden";
+  document.querySelector('body').classList.remove("loading")
 }
 
 //used to increment visibility of info sections

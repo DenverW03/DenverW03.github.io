@@ -9,6 +9,10 @@ body{
     /*background-image: linear-gradient(to right, #5a5a5a 30%, #8a14d4); gradient bg*/
     background-color: var(--bg-color);/*grey#3d3d3d - blue#647bcf*/
 }
+.loading{
+    filter: blur(5px);
+}
+
 .graphics-panel{
     z-index: 0;
     background-color: var(--card-color-blue); /*placeholder for image*/
@@ -113,6 +117,13 @@ body{
     font-size: 2em;
     left: 1em;
     top: 10em;
+}
+.content-panel > h4{
+    position: relative;
+    color: white;
+    font-size: 2em;
+    left: 1em;
+    top: 1em;
 }
 @media (min-width: 1280px) {
     .content-panel{
