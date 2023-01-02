@@ -133,6 +133,9 @@ body{
     }
 }
 /*used to underline specific part of text*/
+.underline{
+    display: inline;
+}
 .underline:hover{
     text-decoration: underline;
     text-decoration-color: var(--card-color-blue);
