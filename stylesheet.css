@@ -55,13 +55,13 @@ body{
     gap: 0.5em;
     width: fit-content;
     height: fit-content;
-    left: calc(50% - 4em - 0.5em - 0.25em);
+    left: calc(50% - 3em - 0.5em);
     top: 12em;
 }
 @media (min-width: 1280px){
     .circle-panel{
         top: 8.5em;
-        left: calc(50% - 2em - 0.5em - 0.25em);
+        left: calc(50% - 1.5em - 0.5em);
     }
 }
 
@@ -99,7 +99,7 @@ body{
 .content-panel > h1{ /*content style*/
     position: relative;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     top: 1em;
     left: 1em;
     width: calc(100% - 2em);
@@ -112,11 +112,11 @@ body{
     left: 1em;
 }
 .content-panel > h3{
-    position: absolute;
+    position: relative;
     color: white;
     font-size: 2em;
     left: 1em;
-    top: 10em;
+    top: 2em;
 }
 .content-panel > h4{
     position: relative;
@@ -138,9 +138,13 @@ body{
         font-size: 2em;
     }
     .content-panel > h3{
+        position: absolute;
         font-size: 1.5em;
         left: 40%;
         top: 1em;
+    }
+    .content-panel > h4{
+        font-size: 2em;
     }
 }
 /*used to underline specific part of text*/
@@ -280,21 +284,21 @@ color: rgb(240, 240, 240);
     align-items: flex-start;
     display: flex;
     gap: 10px;
+    font-size: 1.6em;
 }
 
-.card-info > i {  
-    font-size: 1em;
-    height: 20px;
-    line-height: 20px;
+.card-info-title{
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    font-size: 3em;
 }
 
-.card-info-title > h3 {
-    font-size: 1.1em;
-    line-height: 20px;
-}
-
-.card-info-title > h4 {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 0.85em;
-    margin-top: 8px;
+@media (min-width: 1280px){
+    .card-info{
+        font-size: 1em;
+    }
+    .card-info-title{
+        font-size: 2em;
+    }
 }
