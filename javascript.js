@@ -33,17 +33,32 @@ function checkDirection(){
     switchVisible(currentP);
   }
 }
-document.addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX
-});
-document.addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX
-  checkDirection()
-});
-
+//have to init here to add event listeners
 var e1 = document.getElementById("main");
 var e2 = document.getElementById("pricing");
 var e3 = document.getElementById("contact");
+
+e1.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+});
+e1.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+});
+e2.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+});
+e2.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+});
+e3.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+});
+e3.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+});
 
 var c1 = document.getElementById("circle1");
 var c2 = document.getElementById("circle2");
