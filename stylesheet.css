@@ -92,11 +92,50 @@ body{
     left: 5%; /*50% - (width/2) surefire way to have it centered*/
     vertical-align: middle;
 }
+.content-panel > h1{ /*content style*/
+    position: relative;
+    color: white;
+    font-size: 2em;
+    top: 1em;
+    left: 1em;
+    width: calc(100% - 2em);
+}
+.content-panel > h2{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    bottom: 1em;
+    left: 1em;
+}
+.content-panel > h3{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    left: 1em;
+    top: 10em;
+}
 @media (min-width: 1280px) {
     .content-panel{
         top: 10em;
         height: 35em;
     }
+    .content-panel > h1{
+        font-size: 1.5em;
+        width: calc(25% - 1em);
+    }
+    .content-panel > h2{
+        font-size: 2em;
+    }
+    .content-panel > h3{
+        font-size: 1.5em;
+        left: 40%;
+        top: 1em;
+    }
+}
+/*used to underline specific part of text*/
+.underline:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--card-color-blue);
 }
 
 /*this element is used to hold the pricing cards*/
@@ -179,8 +218,8 @@ opacity: 1;
 }
 
 .card > .card-content {
-    /*background-color: var(--card-color);*/
-    background-image: linear-gradient(to right bottom, rgb(157, 8, 249) 30%, var(--card-color-blue));
+    background-color: var(--card-color-blue);
+    /*background-image: linear-gradient(to right bottom, rgb(157, 8, 249) 30%, var(--card-color-blue));*/
     border-radius: inherit;
     display: flex;
     flex-direction: column;
