@@ -36,18 +36,55 @@ function switchVisible(identifier){
       e1.style.visibility = "visible";
       e2.style.visibility = "hidden";
       e3.style.visibility = "hidden";
+      currentP = 1;
       break;
     case 2:
       c2.classList.add("circle-indicator-active");
       e1.style.visibility = "hidden";
       e2.style.visibility = "visible";
       e3.style.visibility = "hidden";
+      currentP = 2;
       break;
     case 3:
       c3.classList.add("circle-indicator-active");
       e1.style.visibility = "hidden";
       e2.style.visibility = "hidden";
       e3.style.visibility = "visible";
+      currentP = 3;
       break;
   }
 }
+
+let touchstartX = 0;
+let touchendX = 0;
+let currentP = 1;
+
+function checkDirection(){
+  if(touchendX < touchstartX){
+    if(currentP==3){
+      currentP = 0;
+      switchVisible(currentP);
+      return;
+    }
+    currentP++;
+    switchVisible(currentP);
+  }
+  if(touchendX > touchstartX){
+    if(currentP==1){
+      currentP = 3;
+      switchVisible(currentP);
+      return;
+    }
+    currentP--;
+    switchVisible(currentP);
+  }
+}
+
+document.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+});
+
+document.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+});
