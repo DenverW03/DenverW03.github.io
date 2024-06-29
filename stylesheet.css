@@ -8,11 +8,19 @@
 body {
     background-color: var(--bg-color);
     font-family: Arial;
+}
+
+.hero-container {
+    margin-left: 5%;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .intro-text-box {
+    margin-top: 10%;
     margin-left: 5%;
     min-width: 60%;
     max-width: 70%;
@@ -22,10 +30,20 @@ body {
 
 .intro-text-box > h1 {
     color: white;
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 .intro-text {
     color: white;
     font-size: 1.5rem;
+}
+
+.arrow-container {
+    margin-top: 10%;
+    margin-left: -5%;
+    align-self: center;
+}
+
+.arrow-container > img {
+    transform: rotate(90deg);
 }
