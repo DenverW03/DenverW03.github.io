@@ -1,0 +1,37 @@
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+  gap: 0;
+	justify-content: center;
+	border-top-style: solid;
+	border-top-color: black;
+	border-top-width: 2px;
+}
+
+.footer-item {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	height: max-content;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+.footer-item:nth-child(1) {
+	border-right-style: solid;
+  border-right-color: black;
+	border-right-width: 1px;
+}
+
+.footer-item:nth-child(2) {
+border-left-style: solid;
+border-left-color: black;
+border-left-width: 1px;
+}
+
