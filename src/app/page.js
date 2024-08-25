@@ -9,9 +9,9 @@ export default function Home() {
 
       <div className={styles["hero-container"]}>
         <div className="intro-text-box">
-          <h1>Hi! I'm Denver.</h1>
+          <h1>Hi! I&aposm Denver.</h1>
           <div className="intro-text">
-            I'm a <b>full stack</b> developer who likes to work closely with you to understand what you need.<br />
+            I&aposm a <b>full stack</b> developer who likes to work closely with you to understand what you need.<br />
             I like to produce an intuitive <b>user experience</b> to make services a pleasure to use.<br />
             I have experience in fields ranging from <b>robotics</b> to <b>full stack</b> applications.
           </div>
