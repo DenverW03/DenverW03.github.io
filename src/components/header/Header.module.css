@@ -26,4 +26,35 @@
 	.header-container {
 		height: 8vw;
 	}
+
+	.right-spacer {
+		width: 8vw;
+		height: 8vw;
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+	.header-container {
+		height: 5vw;
+	}
+
+	.right-spacer {
+		width: 5vw;
+		height: 5vw;
+	}
+
+}
+
+@media (min-width: 1440px) {
+	.header-container {
+		height: 3.5vw;
+	}
+
+	.right-spacer {
+		width: 3.5vw;
+		height: 3.5vw;
+	}
+
 }

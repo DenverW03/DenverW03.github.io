@@ -25,3 +25,17 @@
 		width: 5vw;
 	}
 }
+
+@media (min-width: 1024px) {
+	.back-container {
+		height: 3vw;
+		width: 3vw;
+	}
+}
+
+@media (min-width: 1440px) {
+	.back-container {
+		height: 2vw;
+		width: 2vw;
+	}
+}
