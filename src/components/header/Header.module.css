@@ -6,14 +6,21 @@
 	border-bottom-color: black;
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
+
+	height: 13vw;
 }
 
-.header-container > h1 {
-	margin-right: 40%;
+.header-container > .text-container {
+	margin-right: 45%;
+	align-self: center;
 }
 
 @media (min-width: 600px) {
-	.header-container > h1 {
+	.header-container {
+		height: 8vw;
+	}
+	
+	.header-container > .text-container {
 		margin-right: 45%;
 	}
 }

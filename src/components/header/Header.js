@@ -5,7 +5,7 @@ export default function Header({ pageName }) {
 	return (
 		<div className={styles["header-container"]}>
 			<Back />
-			<h1>{pageName}</h1>
+			<div className={styles["text-container"]}>{pageName}</div>
 		</div>
 	);
 }

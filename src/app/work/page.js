@@ -1,10 +1,9 @@
-import Back from "@/components/back/Back";
+import Header from "@/components/header/Header";
 
 export default function Work() {
 	return(
 		<div>
-			<Back></Back>
-			<h1>work</h1>
+			<Header pageName="WORK" />
 		</div>
 	);
 }

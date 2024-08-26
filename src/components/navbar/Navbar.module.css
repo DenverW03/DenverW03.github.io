@@ -1,16 +1,23 @@
 .nav-container {
-	padding-top: 2vh;
-	padding-bottom: 2vh;
 	display: flex;
 	flex-direction: row;
   gap: 10%;
 	justify-content: center;
+	align-items: center;
 	border-bottom-style: solid;
 	border-bottom-color: black;
 	border-bottom-width: 2px;
+
+	height: 13vw;
 }
 
 .nav-item {
 	text-decoration: none;
 	color: black;
+}
+
+@media (min-width: 600px) {
+	.nav-container {
+		height: 8vw;
+	}
 }
