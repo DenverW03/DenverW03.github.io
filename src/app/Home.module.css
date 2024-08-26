@@ -2,15 +2,22 @@
 	padding-top: 25vh;
 }
 
+.intro-text-box {
+	position: relative;
+	left: 2%;
+	width: 96%;
+}
+
 @media (min-width: 600px) {
 	.intro-text-box {
-		position: relative;
 		left: 5%;
 		width: 90%;
 	}
+
 	.intro-text-box > h1 {
 		font-size: 3.5rem;
 	}
+
 	.intro-text {
 		font-size: 1.5rem;
 	}
