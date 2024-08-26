@@ -1,10 +1,9 @@
-import Back from "@/components/back/Back";
+import Header from "@/components/header/Header";
 
 export default function About() {
 	return(
 		<div>
-			<Back></Back>
-			<h1>about</h1>
+			<Header pageName="about" />
 		</div>
 	);
 }
