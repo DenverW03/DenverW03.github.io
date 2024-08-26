@@ -6,6 +6,7 @@ export default function Header({ pageName }) {
 		<div className={styles["header-container"]}>
 			<Back />
 			<div className={styles["text-container"]}>{pageName}</div>
+		<div className={styles["right-spacer"]}></div>
 		</div>
 	);
 }

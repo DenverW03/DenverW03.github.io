@@ -1,7 +1,6 @@
 .header-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	
 	border-bottom-color: black;
 	border-bottom-width: 2px;
@@ -11,16 +10,20 @@
 }
 
 .header-container > .text-container {
-	margin-right: 45%;
+	display: flex;
+	flex-grow: 1;
 	align-self: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.right-spacer {
+	width: 10vw;
+	height: 10vw;
 }
 
 @media (min-width: 600px) {
 	.header-container {
 		height: 8vw;
-	}
-	
-	.header-container > .text-container {
-		margin-right: 45%;
 	}
 }
