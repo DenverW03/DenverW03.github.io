@@ -1,0 +1,31 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: fit-content;
+
+	padding-top: 10vw;
+	gap: 5vw;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 1024px) {
+	.container {
+		padding-top: 5vw;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 0.5vw;
+	}
+
+}
+
+@media (min-width: 1440px) {
+	.container {
+		padding-top: 4vw;
+	}
+
+}
