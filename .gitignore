@@ -1,6 +1,9 @@
 # Silly MAC
 .DS_Store
 
+# Todo list
+todo.md
+
 # dependencies
 /node_modules
 /.pnp
