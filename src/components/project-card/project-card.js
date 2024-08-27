@@ -1,7 +1,7 @@
 import styles from "./project-card.module.css";
 import Link from "next/link";
 
-export default function ProjectCard({key, name, description, languages, link}) {
+export default function ProjectCard({name, description, languages, link}) {
 	return(
 		<div className={styles["card"]}>
 			<h2>{name}</h2>
