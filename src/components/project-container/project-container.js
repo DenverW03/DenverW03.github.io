@@ -10,8 +10,8 @@ export default function ProjectContainer() {
 
 	return(
 		<div className={styles["container"]}>
-			{cardData.map((data) => (
-        <ProjectCard name={data.name} description={data.description} languages={data.languages} link={data.link} />
+			{cardData.map((data, index) => (
+        <ProjectCard key={index} name={data.name} description={data.description} languages={data.languages} link={data.link} />
       ))}
 		</div>
 	);
