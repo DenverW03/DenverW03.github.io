@@ -1,0 +1,15 @@
+.toggle-button-light {
+	padding: 0;
+	margin: 0;
+	border-style: none;
+	background: none;
+	transform: rotate(180deg);
+}
+
+.toggle-button-dark {
+	padding: 0;
+	margin: 0;
+	border-style: none;
+	background: none;
+}
+

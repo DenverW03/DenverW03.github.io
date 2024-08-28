@@ -6,6 +6,11 @@
 	position: relative;
 	left: 2%;
 	width: 96%;
+	color: var(--highlight-color);
+}
+
+.intro-text {
+	color: var(--highlight-color);
 }
 
 @media (min-width: 600px) {

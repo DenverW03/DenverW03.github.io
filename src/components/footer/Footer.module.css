@@ -8,7 +8,7 @@
   gap: 0;
 	justify-content: center;
 	border-top-style: solid;
-	border-top-color: black;
+	border-top-color: var(--highlight-color);
 	border-top-width: 2px;
 }
 
@@ -17,7 +17,7 @@
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
-	color: black;
+	color: var(--highlight-color);
 	height: max-content;
 	padding-top: 2vh;
 	padding-bottom: 2vh;
@@ -25,13 +25,13 @@
 
 .footer-item:nth-child(1) {
 	border-right-style: solid;
-  border-right-color: black;
+  border-right-color: var(--highlight-color);
 	border-right-width: 1px;
 }
 
 .footer-item:nth-child(2) {
 border-left-style: solid;
-border-left-color: black;
+border-left-color: var(--highlight-color);
 border-left-width: 1px;
 }
 

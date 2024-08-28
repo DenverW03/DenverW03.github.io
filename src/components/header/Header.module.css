@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	
-	border-bottom-color: black;
+	border-bottom-color: var(--highlight-color);
 	border-bottom-width: 2px;
 	border-bottom-style: solid;
 
@@ -15,11 +15,22 @@
 	align-self: center;
 	flex-direction: row;
 	justify-content: center;
+	color: var(--highlight-color);
 }
 
 .right-spacer {
 	width: 10vw;
 	height: 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left-color: var(--highlight-color);
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-bottom-color: var(--highlight-color);
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+
 }
 
 @media (min-width: 600px) {
@@ -28,8 +39,8 @@
 	}
 
 	.right-spacer {
-		width: 8vw;
-		height: 8vw;
+		width: 5vw;
+		height: 5vw;
 	}
 
 }
@@ -41,8 +52,8 @@
 	}
 
 	.right-spacer {
-		width: 5vw;
-		height: 5vw;
+		width: 3vw;
+		height: 3vw;
 	}
 
 }
@@ -53,8 +64,8 @@
 	}
 
 	.right-spacer {
-		width: 3.5vw;
-		height: 3.5vw;
+		width: 2vw;
+		height: 2vw;
 	}
 
 }

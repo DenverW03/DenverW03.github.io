@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	border-bottom-style: solid;
-	border-bottom-color: black;
+	border-bottom-color: var(--highlight-color);
 	border-bottom-width: 2px;
 
 	height: 13vw;
@@ -13,7 +13,7 @@
 
 .nav-item {
 	text-decoration: none;
-	color: black;
+	color: var(--highlight-color);
 }
 
 @media (min-width: 600px) {

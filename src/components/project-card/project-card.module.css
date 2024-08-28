@@ -1,6 +1,6 @@
 .card {
 	border-style: solid;
-	border-color: black;
+	border-color: var(--highlight-color);
 	border-width: 2px;
 
 	height: fit-content;
@@ -14,6 +14,7 @@
 	margin: 0;
 	padding-left: 2%;
 	padding-top: 1%;
+	color: var(--highlight-color);
 }
 
 .project-desc-container {
@@ -27,6 +28,7 @@
 
 .project-desc-container > p {
 	margin: 0;
+	color: var(--highlight-color);
 }
 
 .link-container {
@@ -39,10 +41,10 @@
 
 .link {
 	text-decoration: none;
-	color: black;
+	color: var(--highlight-color);
 	padding: 1rem;
 	margin: 1rem;
-	border-color: black;
+	border-color: var(--highlight-color);
 	border-style: solid;
 	border-width: 2px;
 }

@@ -11,10 +11,10 @@
 	border-top: none;
 	border-left: none;
 
-	border-bottom-color: black;
+	border-bottom-color: var(--highlight-color);
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-	border-right-color: black;
+	border-right-color: var(--highlight-color);
 	border-right-style: solid;
 	border-right-width: 2px;
 }

@@ -1,6 +1,14 @@
 /* Color variables */
 :root {
-    --card-color: rgb(23, 23, 23);
-    --bg-color: rgb(79, 79, 79);
+	--main-color: white;
+	--highlight-color: black;
 }
 
+[data-theme="dark"] {
+	--main-color: black;
+	--highlight-color: white;
+}
+
+body {
+	background-color: var(--main-color);
+}

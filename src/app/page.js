@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
 import styles from "./Home.module.css";
 import Footer from "@/components/footer/Footer";
+import { ThemeProvider } from "@/components/theme-toggle/ThemeContext";
 
 export default function Home() {
 	return (
