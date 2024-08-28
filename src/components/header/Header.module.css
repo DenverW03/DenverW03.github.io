@@ -30,7 +30,6 @@
 	border-bottom-color: var(--highlight-color);
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-
 }
 
 @media (min-width: 600px) {

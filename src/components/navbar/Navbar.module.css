@@ -16,9 +16,32 @@
 	color: var(--highlight-color);
 }
 
+.theme-toggle-container {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	width: 10vw;
+	height: 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left-color: var(--highlight-color);
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-bottom-color: var(--highlight-color);
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+
+}
+
 @media (min-width: 600px) {
 	.nav-container {
 		height: 8vw;
+	}
+
+	.theme-toggle-container {
+		width: 5vw;
+		height: 5vw;
 	}
 }
 
@@ -26,10 +49,20 @@
 	.nav-container {
 		height: 5vw;
 	}
+
+	.theme-toggle-container {
+		width: 3vw;
+		height: 3vw;
+	}
 }
 
 @media (min-width: 1440px) {
 	.nav-container {
 		height: 3.5vw;
+	}
+
+	.theme-toggle-container {
+		width: 2vw;
+		height: 2vw;
 	}
 }
