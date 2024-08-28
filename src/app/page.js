@@ -1,13 +1,11 @@
 import Navbar from "@/components/navbar/Navbar";
 import styles from "./Home.module.css";
 import Footer from "@/components/footer/Footer";
-import { ThemeProvider } from "@/components/theme-toggle/ThemeContext";
 
 export default function Home() {
 	return (
     <>
 			<Navbar></Navbar>
-
       <div className={styles["hero-container"]}>
         <div className={styles["intro-text-box"]}>
           <h1>Hi! I&apos;m Denver.</h1>
