@@ -3,9 +3,9 @@ title: "an intro to swarm robotics"
 date: "01/09/2024"
 ---
 
-# Welcome
+# So what is swarm robotics?
 
-This is the content of my first blog post written in Markdown. It can include **bold text**, _italic text_, and more.
+Swarm robotics is a principle for building robots born from nature!
 
 ![My Image](/swarm.webp)
 
