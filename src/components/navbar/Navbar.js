@@ -8,8 +8,8 @@ export default function Navbar() {
 			<Link href="./about" className={styles['nav-item']}>
 				ABOUT
 			</Link>
-			<Link href="./work" className={styles['nav-item']}>
-				WORK
+			<Link href="./blog" className={styles['nav-item']}>
+				BLOG
 			</Link>
 			<Link href="./projects" className={styles['nav-item']}>
 				PROJECTS
