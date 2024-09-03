@@ -3,6 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .article {
@@ -33,6 +34,7 @@
 @media (min-width: 1024px) {
 	.article-container {
 		margin-top: 3%;
+		margin-bottom: 3%;
 	}
 
 	.article {
@@ -47,6 +49,7 @@
 @media (min-width: 1440px) {
 	.article-container {
 		margin-top: 2%;
+		margin-bottom: 2%;
 	}
 
 	.article {
