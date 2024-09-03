@@ -24,11 +24,9 @@ export default async function BlogPost({ params }) {
 
   const content = processedContent.toString();
 
-	const headerTitle = `${data.title} - ${data.date}`;
-
   return (
 		<>
-			<Header pageName={headerTitle} />
+			<Header pageName={data.title} />
 			<div className={styles["article-container"]}>
 				<article className={styles.article}>
 					<div dangerouslySetInnerHTML={{ __html: content }} />

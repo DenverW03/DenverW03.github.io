@@ -7,5 +7,5 @@ date: "01/09/2024"
 
 Swarm robotics is a principle for building robots born from nature!
 
-![My Image](/swarm.webp)
+![My Image](/blog/swarm.webp)
 

@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import matter from 'gray-matter';
+import Header from '@/components/header/Header';
+import styles from './Blog.module.css';
 
 // The main Blog page component
 export default async function BlogPage() {
@@ -19,22 +21,21 @@ export default async function BlogPage() {
     return {
       slug,
       title: data.title,
+			date: data.date,
     };
   });
 
   return (
-    <div>
-      <h1>Blog</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blog/${post.slug}`}>
-              {post.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+		<>
+		<Header pageName="BLOG" />
+    <div className={styles["list-container"]}>
+			{posts.map((post) => (
+					<Link key={post.slug} href={`/blog/${post.slug}`} className={styles["list-item"]}>
+						{`${post.title} - ${post.date}`}
+					</Link>
+			))}
     </div>
+		</>
   );
 }
 
