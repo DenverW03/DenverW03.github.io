@@ -4,6 +4,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import matter from 'gray-matter';
 import Header from '@/components/header/Header';
+import styles from './Article.module.css';
 
 export default async function BlogPost({ params }) {
   const { slug } = params;
@@ -28,9 +29,11 @@ export default async function BlogPost({ params }) {
   return (
 		<>
 			<Header pageName={headerTitle} />
-			<article>
-				<div dangerouslySetInnerHTML={{ __html: content }} />
-			</article>
+			<div className={styles["article-container"]}>
+				<article className={styles.article}>
+					<div dangerouslySetInnerHTML={{ __html: content }} />
+				</article>
+			</div>
 		</>
   );
 }

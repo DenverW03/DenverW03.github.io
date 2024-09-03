@@ -1,0 +1,44 @@
+.article-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.article {
+	max-width: 90%;
+	padding: 2%;
+	border-style: solid;
+	border-color: var(--highlight-color);
+}
+
+.article img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: 600px) {
+	.article {
+		max-width: 80%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.article-container {
+		margin-top: 3%;
+	}
+
+	.article {
+		max-width: 70%;
+	}
+}
+
+@media (min-width: 1440px) {
+	.article-container {
+		margin-top: 2%;
+	}
+
+	.article {
+		max-width: 60%;
+	}
+}
